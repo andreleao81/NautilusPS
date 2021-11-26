@@ -1,8 +1,4 @@
-# Lista de entregaveis de Python, Orientacao a Objeto
-# André Leão, Engenharia Eletrônica e de Computação
-
-
-
+# OOP Python list
 
 
 class Team:
@@ -52,13 +48,4 @@ class Team:
         # compares if less or equal
         return (self.score <= rival.score)
 
-
-fla = Team('Flamengo', 67)
-flu = Team('Fluminense', 10)
-vas = Team('Vasco', 20)
-bot = Team('Botafogo', 15)
-
-teams = [fla, flu, bot, vas]
-print(teams)
-teams.sort()
-print(teams)
+# format : team = Team (name, score
