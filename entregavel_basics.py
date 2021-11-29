@@ -2,15 +2,12 @@
 
 # Question 1
 
-def as_or_gs(ratio):
-    num = 2
-    maximum = 50
+def as_or_gs(ratio, num, maximum):
     result = list()
-
     while num <= maximum:
         result += [num]
-        # if ratio is even, add it to number (making an arithmetic sequence)
-        # if not, multiply number by it (making an geometric sequence) 
+        # if ratio is even, it'll be added to number (making an arithmetic sequence)
+        # if not, number will be multiplied by it (making an geometric sequence) 
         num = num + ratio if ratio % 2 == 0 else num * ratio
     return result
 
