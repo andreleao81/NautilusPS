@@ -1,0 +1,13 @@
+<?xml version='1.0'?>
+<launch>
+
+    <!-- Arguments -->
+    <arg name='params' default='planets'/>
+
+    <!-- Initialize Params -->
+    <rosparam command='load' file='$(find orbit)/param/$(arg params).yaml'/>
+
+    <!--  Run Nodes  -->
+    <node pkg='orbit' name='transforms' type='solar_system.py'/>
+    
+</launch>
